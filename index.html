@@ -8,6 +8,8 @@
     <title>Manipulating the DOM</title>
     <!-- Load Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <!-- Load Styles -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -16,6 +18,7 @@
     <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
+        <div class="toggle"><a href="#"><i class="fas fa-bars"></i></a></div>
         <nav class="navbar__menu">
             <!-- Navigation starts as empty UL that will be populated with JS -->
             <ul id="navbar__list"></ul>

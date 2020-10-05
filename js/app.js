@@ -19,6 +19,8 @@
 */
 const navbarList = document.querySelector('#navbar__list');
 const sections = document.querySelectorAll('section');
+const toggle = document.querySelector('.toggle');
+const menu = document.querySelector('.navbar__menu');
 
 
 /**
@@ -46,6 +48,19 @@ function removeActive(el) {
     el.classList.remove('your-active-class');
 }
 
+function toggleMenu() {
+    toggle.addEventListener('click', function () {
+        if (menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            // add hamburger icon
+            toggle.querySelector('a').innerHTML = '<i class="fas fa-bars"></i>';
+        } else {
+            menu.classList.add('active');
+            // add close(x) icon
+            toggle.querySelector('a').innerHTML = '<i class="fas fa-times"></i>';
+        }
+    }, false);
+}
 
 /**
  * End Helper Functions
@@ -100,3 +115,22 @@ scrollTo();
 
 // Set sections as active
 setActive();
+
+// Toggle mobile menu
+toggleMenu();
+
+
+
+
+
+
+
+
+// ToDo: Add an active state to your navigation items when a section is clicked.
+// add inside ScrollTo():
+// let link = document.querySelector(`[data-link="${el.dataset.nav}"]`);
+// console.log(link);
+// let activeLink = document.querySelector('.menu__link.your-active-class');
+// console.log(activeLink);
+// removeActive(activeLink);
+// addActive(link);
