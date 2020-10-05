@@ -1,17 +1,14 @@
 # Landing Page Project
 This is Project 2 from the Udacity Front End Nanodegree program. 
-The project is hosted on [GitHub Pages][https://irinakramer.github.io/landing-page/].
+The project is hosted on [GitHub Pages](https://irinakramer.github.io/landing-page/).
 
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Specifications](#specifications)
-
-* [Description] (#description)
-* [Prerequisite] (#prerequisite)
-* [Installation] (#installation)
-* [Runtime Environment] (#runtime environment)
+* [Description](#description)
+* [Prerequisite](#prerequisite)
+* [Installation](#installation)
+* [Runtime Environment](#runtime environment)
 
 ## Description
 The goal of this project was to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page. 
@@ -22,7 +19,7 @@ The goal of this project was to build a multi-section landing page, with a dynam
 * When clicking an item from the navigation menu, the link should scroll to the appropriate section.
 
 ## Prerequisite
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. I converted this project from a static project to an interactive one. It required modifying the HTML and CSS files, but primarily the JavaScript file `js/app.js`.
+The starter project has some HTML and CSS styling to display a static version of the Landing Page project. I converted this project from a static project to an interactive one. It required modifying the HTML and CSS files, but primarily building JavaScript file `js/app.js` from scratch.
 
 ## Installation
 
