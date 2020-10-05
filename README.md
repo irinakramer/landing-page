@@ -8,7 +8,7 @@ The project is hosted on [GitHub Pages](https://irinakramer.github.io/landing-pa
 * [Description](#description)
 * [Prerequisite](#prerequisite)
 * [Installation](#installation)
-* [Runtime Environment](#runtime environment)
+* [Runtime-Environment](#runtime-environment)
 
 ## Description
 The goal of this project was to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page. 
