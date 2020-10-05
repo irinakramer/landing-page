@@ -13,5 +13,7 @@ The starter project has some HTML and CSS styling to display a static version of
 ## Specifications
 
 Navigation is built dynamically as an unordered list.
+
 It should be clear which section is being viewed while scrolling through the page.
+
 When clicking an item from the navigation menu, the link should scroll to the appropriate section.
