@@ -33,7 +33,7 @@ const menu = document.querySelector('.navbar__menu');
 function isInViewport(el) {
     const bounds = el.getBoundingClientRect();
     return (
-        bounds.top >= -300 &&
+        bounds.top >= 0 &&
         bounds.left >= 0 &&
         bounds.bottom <= (window.innerHeight + 100) &&
         bounds.right <= (window.innerWidth)
@@ -84,9 +84,14 @@ function buildNav() {
 function setActive() {
     window.addEventListener('scroll', function () {
         for (const section of sections) {
+            const activeLink = document.querySelector(`[data-link="${section.dataset.nav}"]`)
             if (isInViewport(section)) {
                 addActive(section);
-            } else removeActive(section);
+                addActive(activeLink);
+            } else {
+                removeActive(section);
+                removeActive(activeLink);
+            }
         }
     });
 }
@@ -118,19 +123,3 @@ setActive();
 
 // Toggle mobile menu
 toggleMenu();
-
-
-
-
-
-
-
-
-// ToDo: Add an active state to your navigation items when a section is clicked.
-// add inside ScrollTo():
-// let link = document.querySelector(`[data-link="${el.dataset.nav}"]`);
-// console.log(link);
-// let activeLink = document.querySelector('.menu__link.your-active-class');
-// console.log(activeLink);
-// removeActive(activeLink);
-// addActive(link);
