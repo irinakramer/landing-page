@@ -1,5 +1,5 @@
 # Landing Page Project
-This project is project 2 from the Udacity Front End Nanodegree program. 
+This is Project 2 from the Udacity Front End Nanodegree program. 
 
 ## Table of Contents
 
