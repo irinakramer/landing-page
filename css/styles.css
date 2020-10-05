@@ -194,8 +194,11 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-    background: red;
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%); */
+    background-color: #FFE53B;
+    background-image: linear-gradient(313deg, #FFE53B 0%, #FF2525 74%);  
+}
+.menu__link.your-active-class {
+    background-color: #FFE53B;
 }
 
 section.your-active-class .landing__container::before {

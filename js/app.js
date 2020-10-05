@@ -31,7 +31,7 @@ const sections = document.querySelectorAll('section');
 function isInViewport(el) {
     const bounds = el.getBoundingClientRect();
     return (
-        bounds.top >= -100 &&
+        bounds.top >= -300 &&
         bounds.left >= 0 &&
         bounds.bottom <= (window.innerHeight + 100) &&
         bounds.right <= (window.innerWidth)
@@ -47,7 +47,6 @@ function removeActive(el) {
 }
 
 
-
 /**
  * End Helper Functions
  * Begin Main Functions
@@ -57,15 +56,11 @@ function removeActive(el) {
 // build the nav
 function buildNav() {
     for (const section of sections) {
-        let navListItem = `<li class="menu__link"><a href="#${section.getAttribute('id')}">${section.dataset.nav}</a></li>`;
+        let navListItem = `
+            <li class="menu__link" data-link="${section.dataset.nav}">
+                <a href="#${section.getAttribute('id')}">${section.dataset.nav}</a>
+            </li>`;
         navbarList.innerHTML += navListItem;
-        // let listItem = document.createElement('li');
-        // let menuLink = document.createElement('a');
-        // menuLink.textContent = section.dataset.nav;
-        // menuLink.setAttribute('href', `#${section.getAttribute('id')}`);
-        // listItem.setAttribute('class', 'menu__link');
-        // listItem.appendChild(menuLink);
-        // navbarList.appendChild(listItem);
     }
 }
 
